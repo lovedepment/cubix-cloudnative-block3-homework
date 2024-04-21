@@ -4,6 +4,7 @@ metadata:
   name: frontapp
   labels:
     training: block3
+    homework: frontapp
 spec:
   selector:
     matchLabels:
@@ -24,6 +25,6 @@ spec:
             - name: APP_DEFAULT_MESSAGE
               value: frontapp
             - name: BACK_URL
-              value: http://backapp:8080
+              value: cubix-service:8080
             - name: JAVA_OPTS
               value:
