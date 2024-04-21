@@ -25,6 +25,6 @@ spec:
             - name: APP_DEFAULT_MESSAGE
               value: frontapp
             - name: BACK_URL
-              value: cubix-service:8080
+              value:  cubix-service-backapp:8080
             - name: JAVA_OPTS
               value:

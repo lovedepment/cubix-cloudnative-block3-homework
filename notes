@@ -1,6 +1,7 @@
 kubectl apply -f .\deployment_frontapp.yaml
 kubectl apply -f .\deployment_backapp.yaml
-kubectl apply -f .\service.yaml
+kubectl apply -f .\service_frontapp.yaml
+kubectl apply -f .\service_backapp.yaml
 kubectl apply -f .\ingress.yaml
 
 kubectl get all
