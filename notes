@@ -1,0 +1,19 @@
+kubectl apply -f .\deployment_frontapp.yaml
+kubectl apply -f .\deployment_backapp.yaml
+kubectl apply -f .\service.yaml
+kubectl apply -f .\ingress.yaml
+
+kubectl get all
+
+## command(s) for checking the logs of the backapp application
+kubectl logs -f -l homework=backapp
+
+## ONE kubectl command which lists all resources related to the frontapp
+kubectl get all -l homework=frontapp
+
+## ONE kubectl command which can delete all resources for both applications:
+kubectl delete all -l training=block3
+
+
+
+
